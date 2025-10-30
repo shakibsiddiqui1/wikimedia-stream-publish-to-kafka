@@ -64,31 +64,22 @@ This setup replicates a real-world **event-driven microservice architecture** co
 ### 3️⃣ Run the Producer
 ### 4️⃣ Run the Consumer
 
-💡 Key Learnings
+## 💡 Key Learnings
 
-Integrating Spring Boot with Apache Kafka
+- Integrating **Spring Boot** with **Apache Kafka**  
+- Consuming **live real-time streams** using **Spring WebClient**  
+- Designing **event-driven microservices**  
 
-Consuming live real-time streams using Spring WebClient
+---
 
-Designing event-driven microservices
+## 👨‍💻 Author
 
-Building reliable, scalable message pipelines
+**Shakib Siddiqui**  
+💼 Passionate Java Backend Developer | Spring Boot | Microservices | Kafka  
+📧 [https://www.linkedin.com/in/shakib-siddiqui-5861a81b4/]
 
-🧠 Future Enhancements
+---
 
-Store streamed data in MongoDB / PostgreSQL
+⭐ *If you like this project, don’t forget to give it a star on GitHub!*
 
-Expose REST APIs for querying processed data
-
-Add Kafka Streams for real-time analytics
-
-Implement Docker Compose for one-click local setup
-
-👨‍💻 Author
-
-Shakib Siddiqui
-💼 Passionate Java Backend Developer | Spring Boot | Microservices | Kafka
-📧 [LinkedIn or Email Placeholder]
-
-⭐ If you like this project, don’t forget to give it a star on GitHub!
 
