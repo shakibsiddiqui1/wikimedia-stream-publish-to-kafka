@@ -57,11 +57,13 @@ This setup replicates a real-world **event-driven microservice architecture** co
 
 ## 🧑‍💻 Setup & Run Instructions
 
-### 1️⃣ Start Kafka Broker
+### ✅ You should have Kafka installed in your machine.
+## 1️⃣ Start Kafka Broker
 .\bin\windows\kafka-server-start.bat .\config\kraft\server.properties
 
 ## 3️⃣ Run the Producer
 ## 4️⃣ Run the Consumer
+## 5️⃣ Hit API from Postman : localhost:8081/api/v1/wikimedia
 
 ## 💡 Key Learnings
 
