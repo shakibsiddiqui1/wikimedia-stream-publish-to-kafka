@@ -58,11 +58,10 @@ This setup replicates a real-world **event-driven microservice architecture** co
 ## 🧑‍💻 Setup & Run Instructions
 
 ### 1️⃣ Start Kafka Broker
-```bash
 .\bin\windows\kafka-server-start.bat .\config\kraft\server.properties
 
-### 3️⃣ Run the Producer
-### 4️⃣ Run the Consumer
+## 3️⃣ Run the Producer
+## 4️⃣ Run the Consumer
 
 ## 💡 Key Learnings
 
