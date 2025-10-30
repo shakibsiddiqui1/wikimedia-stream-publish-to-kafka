@@ -19,3 +19,76 @@ This setup replicates a real-world **event-driven microservice architecture** co
 ---
 
 ## 🧱 Architecture Diagram
+    Wikimedia Stream (public API)
+                │
+                ▼
+       [Spring Boot Producer]
+                │
+                ▼
+          Apache Kafka Topic
+                │
+                ▼
+       [Spring Boot Consumer]
+                │
+                ▼
+             Storage
+
+
+---
+
+## 🧰 Tech Stack
+| Component | Technology |
+|------------|-------------|
+| **Language** | Java 21 |
+| **Framework** | Spring Boot 3.x |
+| **Messaging** | Apache Kafka |
+| **HTTP Client** | Spring WebClient |
+| **Build Tool** | Maven |
+| **Logging** | SLF4J + Logback |
+
+---
+
+## ⚙️ How It Works
+1. The **Producer** connects to Wikimedia’s public “Recent Changes” stream via WebClient.  
+2. It continuously listens to live updates and publishes messages to a Kafka topic (e.g., `wikimedia_stream`).  
+3. The **Consumer** listens to this topic and processes each event — you can extend it to save data in a database, trigger events, or perform analytics.
+
+---
+
+## 🧑‍💻 Setup & Run Instructions
+
+### 1️⃣ Start Kafka Broker
+```bash
+.\bin\windows\kafka-server-start.bat .\config\kraft\server.properties
+
+### 3️⃣ Run the Producer
+### 4️⃣ Run the Consumer
+
+💡 Key Learnings
+
+Integrating Spring Boot with Apache Kafka
+
+Consuming live real-time streams using Spring WebClient
+
+Designing event-driven microservices
+
+Building reliable, scalable message pipelines
+
+🧠 Future Enhancements
+
+Store streamed data in MongoDB / PostgreSQL
+
+Expose REST APIs for querying processed data
+
+Add Kafka Streams for real-time analytics
+
+Implement Docker Compose for one-click local setup
+
+👨‍💻 Author
+
+Shakib Siddiqui
+💼 Passionate Java Backend Developer | Spring Boot | Microservices | Kafka
+📧 [LinkedIn or Email Placeholder]
+
+⭐ If you like this project, don’t forget to give it a star on GitHub!
+
